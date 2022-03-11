@@ -3,20 +3,22 @@
 	"name": "PSON",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"name":"keyword.operator.pson",
+			"match": "="
 		},
 		{
-			"include": "#strings"
-		}
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.pson",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"name": "constant.numeric.pson",
+			"match": "[-]?[0-9]+([.][0-9]+)?"
 		},
-		"strings": {
+		{
+			"name": "constant.language.pson",
+			"match": "true|false|null|inf|-inf|nan"
+		},
+		{
+			"name":"variable.pson",
+			"match": "[A-Za-z_][A-Za-z0-9_]*"
+		},
+		{
 			"name": "string.quoted.double.pson",
 			"begin": "\"",
 			"end": "\"",
@@ -27,6 +29,8 @@
 				}
 			]
 		}
+	],
+	"repository": {
 	},
 	"scopeName": "source.pson"
 }
