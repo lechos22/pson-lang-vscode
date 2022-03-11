@@ -2,7 +2,8 @@
     "name": "pson-lang",
     "displayName": "pson-lang",
     "description": "PlacekScript Object Notation",
-    "version": "0.0.1",
+    "version": "1.0.0",
+    "publisher": "lechos22",
     "engines": {
         "vscode": "^1.65.0"
     },
