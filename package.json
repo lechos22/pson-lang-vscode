@@ -10,16 +10,28 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "pson",
-            "aliases": ["PSON", "pson"],
-            "extensions": [".pson"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "pson",
-            "scopeName": "source.pson",
-            "path": "./syntaxes/pson.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "pson",
+                "aliases": [
+                    "PSON",
+                    "pson"
+                ],
+                "extensions": [
+                    ".pson"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "pson",
+                "scopeName": "source.pson",
+                "path": "./syntaxes/pson.tmLanguage.json"
+            }
+        ]
+    },
+    "dependencies": {
+        "vsce": "^2.6.7"
     }
 }
