@@ -30,8 +30,5 @@
                 "path": "./syntaxes/pson.tmLanguage.json"
             }
         ]
-    },
-    "dependencies": {
-        "vsce": "^2.6.7"
     }
 }
